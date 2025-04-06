@@ -3,7 +3,7 @@
 ![Logo EDF](imges/EDF.png)
 # ⚡ EDF - Dashboard de production énergétique
 
-Ce projet est une application interactive développée avec **Streamlit** permettant de visualiser les données de production électrique en France et dans le monde, par filière (fossile, renouvelable, nucléaire), avec des données issues d’un fichier Excel et d’une API.
+Ce projet est une application interactive développée avec **Streamlit** permettant de visualiser les données de production énergétique en France et dans le monde, par filière (fossile, renouvelable, nucléaire.. ), avec des données issues d’un fichier Excel et d’une API.
 
 ---
 
@@ -16,7 +16,7 @@ Ce projet est une application interactive développée avec **Streamlit** permet
   - Fichier API Monde (`Edf_world.xlsx`)
 - 📊 **Visualisations riches et filtrables** :
   - Courbes, barplots, boxplots et matrice de corrélation
-  - Filtrage par **année**, **pays** et **secteur d'activité**
+  - Filtrage par **année**, **pays** et **secteur**  **Type de Graphique** **Type d'énergie** 
   - Comparaison des filières : **renouvelables**, **fossiles**, **nucléaire**
 - 🌍 **Comparaison France vs Monde** sur la production énergétique et les émissions de CO₂
 - 🗺️ **Carte interactive personnalisée** :
@@ -28,8 +28,6 @@ Ce projet est une application interactive développée avec **Streamlit** permet
 
 EDF/ ├── components/ # Modules Python (interface, cartes, visualisations) │ ├── EDF.py │ ├── Edfdata.py │ ├── Map.py │ └── carte_edf_style_emaps.html │ ├── data/ # Données Excel (non versionnées) │ ├── lelec.xlsx │ └── Edf_world.xlsx │ ├── img/ # Logos et captures d’écran │ └── EDF.png │ ├── temp_images/ # Images temporaires pour les PDF ├── .gitignore ├── requirements.txt └── README.md
 
-
-## 🛠️ Technologies utilisées
 
 ## 🛠️ Technologies utilisées
 
@@ -100,10 +98,10 @@ L'application dispose d'une **barre latérale** permettant de filtrer les résul
 > Tous les onglets partagent également des métriques statiques affichant la production totale et la répartition par type d’énergie ainsi que d'autre métriques.
 
 ---
-
+☑️ **Sidebar interactive**  
 ### Onglet 1 : Fichier Excel France
 
-☑️ **Sidebar interactive**  
+
 L'onglet principal permet d’avoir une vue d’ensemble sur les indicateurs globaux. On y retrouve :
 
 - 📄 Visualisation et filtrage des données issues du fichier `lelec.xlsx`
@@ -113,6 +111,7 @@ L'onglet principal permet d’avoir une vue d’ensemble sur les indicateurs glo
 - 📈 Graphiques interactifs : Courbes, Barplots, Boxplots, Matrice de corrélation, Donut
 
 ---
+Démonstration Gif:
 
 ![Démo de l'application – France](imges/demo1.gif)
 
@@ -139,6 +138,8 @@ L'onglet principal permet d’avoir une vue d’ensemble sur les indicateurs glo
 
 
 ---
+
+Démonstration Gif:
 
 ![Démo de l'application – France](imges/demo2.gif)
 
