@@ -191,7 +191,7 @@ souscategories = {
 
 
 energy_emojis = {
-    "Electric": "⚡",
+    "Electrique": "⚡",
     "Heat": "🔥",
 }
 

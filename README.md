@@ -97,7 +97,7 @@ streamlit run components/EDF.py
 
 L'application dispose d'une **barre latérale** permettant de filtrer les résultats et se compose de plusieurs **onglets** ayant chacun une fonctionnalité spécifique.
 
-> Tous les onglets partagent également des métriques statiques affichant la production totale et sa répartition par type d’énergie.
+> Tous les onglets partagent également des métriques statiques affichant la production totale et la répartition par type d’énergie ainsi que d'autre métriques.
 
 ---
 
@@ -106,52 +106,43 @@ L'application dispose d'une **barre latérale** permettant de filtrer les résul
 ☑️ **Sidebar interactive**  
 L'onglet principal permet d’avoir une vue d’ensemble sur les indicateurs globaux. On y retrouve :
 
-- Les métriques dynamiques (production totale, part de renouvelable, fossile, nucléaire…)
-- Des jauges et graphiques interactifs
-- Un résumé France 
-- Des pourcentages d’évolution par rapport à l’année précédente
+- 📄 Visualisation et filtrage des données issues du fichier `lelec.xlsx`
+- Possibilité de filtrer par **année** et **type de graphique** (Courbe ou Boxplot)
+- 📊 Métriques dynamiques : production totale, part de renouvelable, fossile, nucléaire…
+- 🔁 Évolution par rapport à l’année précédente
+- 📈 Graphiques interactifs : Courbes, Barplots, Boxplots, Matrice de corrélation, Donut
 
 ---
 
-![Démo de l'application](imges/demo1.gif)
-
-### Onglet 2 : Données Excel (France)
-
-📄 Visualisation et filtrage des données issues du fichier `lelec.xlsx`.  
-- Possibilité de filtrer par **année** et **type de filière**
-- Comparaison graphique de la production en GWh
-- Boxplots, barplots et courbes selon le secteur
+![Démo de l'application – France](img/demo1.gif)
 
 ---
 
-### Onglet 3 : Données API (Monde)
+### Onglet 2 : Données API (Monde)
 
-🌍 Données issues du fichier `Edf_world.xlsx` alimenté par une API.  
-- Matrice de corrélation
-- Comparaison géographique des secteurs d’énergie
+🌍 Données issues du fichier `Edf_world.xlsx`, alimenté par une API.
+
+- 📄 Tableau interactif filtrable par :
+  - **Année**
+  - **Pays**
+  - **Filière**
+  - **Type d'énergie**
+- 📊 Métriques dynamiques :
+  - Production totale
+  - Part d’énergie et de chaleur
+  - Nombre de pays où EDF est actif
+  - Top pays producteurs
+- 📈 Visualisations interactives : Courbes, Barplots, Donuts
+- 🗺️ **Carte mondiale interactive** :
+  - Filtrable par année
+  - Affiche la production et la
+
 
 ---
 
-### Onglet 4 : Carte interactive
-
-🗺️ Affichage dynamique avec Leaflet :  
-- Production totale par pays
-- Répartition par filière avec **emojis et drapeaux**
-- Popup personnalisés sur chaque pays
-- Filtrage par année
+![Démo de l'application – France](img/demo1.gif)
 
 ---
-
-### Démonstration
-
-> *(Ajoute ici une capture d’écran réelle de ton app pour illustrer)*
-
-![Aperçu de l'application](img/screenshot.png)
-
-
-
-
-
 
 
 
