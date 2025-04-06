@@ -119,7 +119,7 @@ L'onglet principal permet d’avoir une vue d’ensemble sur les indicateurs glo
 - 📈 Graphiques interactifs : Courbes, Barplots, Boxplots, Matrice de corrélation, Donut
 
 ---
-Démonstration Gif:
+📺 Démonstration Gif:
 
 ![Démo de l'application – France](imges/demo1.gif)
 
@@ -147,7 +147,7 @@ Démonstration Gif:
 
 ---
 
-Démonstration Gif:
+📺 Démonstration Gif:
 
 ![Démo de l'application – France](imges/demo2.gif)
 
