@@ -11,7 +11,7 @@
 ![Logo EDF](imges/EDF.png)
 # ⚡ EDF - Dashboard de production énergétique
 
-Ce projet est une application interactive développée avec **Streamlit** permettant de visualiser les données de production énergétique en France et dans le monde, par filière (fossile, renouvelable, nucléaire.. ), avec des données issues d’un fichier Excel et d’une API.
+Ce projet est une application interactive développée avec **Streamlit** permettant de visualiser les données de production énergétique en France et dans le monde,  avec des données issues d’un fichier Excel et d’une API.
 
 ---
 
