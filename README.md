@@ -32,6 +32,7 @@ Ce projet est une application interactive développée avec **Streamlit** permet
   - Répartition par type d’énergie (**Renouvelable**, **Fossile**, **Nucléaire**, **Various**)
   - Filtrage par année 
 
+
 ## 📁 Structure du projet
 
 EDF/ ├── components/ # Modules Python (interface, cartes, visualisations) │ ├── EDF.py │ ├── Edfdata.py │ ├── Map.py │ └── carte_edf_style_emaps.html │ ├── data/ # Données Excel (non versionnées) │ ├── lelec.xlsx │ └── Edf_world.xlsx │ ├── img/ # Logos et captures d’écran │ └── EDF.png │ ├── temp_images/ # Images temporaires pour les PDF ├── .gitignore ├── requirements.txt └── README.md
@@ -141,8 +142,9 @@ L'onglet principal permet d’avoir une vue d’ensemble sur les indicateurs glo
   - Top pays producteurs
 - 📈 Visualisations interactives : Courbes, Barplots, Donuts
 - 🗺️ **Carte mondiale interactive** :
-  - Filtrable par année
-  - Affiche la production et la
+  - Affichage de la production par pays
+  - Répartition par type d’énergie (Renouvelable, Fossile, Nucléaire, Various)
+  - Filtrage par année
 
 
 ---
