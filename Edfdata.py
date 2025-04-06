@@ -355,7 +355,7 @@ def plot_typeenergie(edf_world,pays_selection,selected_year, secteurs_selection,
 @st.cache_data
 def plot_Groupe(edf_world, selected_year, pays_selection):
     fossiles_keywords = ['Coal', 'Gas', 'Fioul']
-    renouvelables_keywords = ['Wind', 'Hydraulic', 'Solar', 'Biomass', 'Geothermal', 'Marine', 'Renewable']
+    renouvelables_keywords = ['Wind', 'Hydraulic', 'Solar', 'Biomass', 'Geothermal', 'Marine energy', 'Renewable']
     nucleaire_keywords = ['Nuclear']
 
     def classify_sector(sector):
