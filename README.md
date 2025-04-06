@@ -140,7 +140,7 @@ L'onglet principal permet d’avoir une vue d’ensemble sur les indicateurs glo
 
 ---
 
-![Démo de l'application – France](img/demo1.gif)
+![Démo de l'application – France](img/demo2.gif)
 
 ---
 
