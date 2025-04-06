@@ -96,7 +96,7 @@ pip install -r requirements.txt
 
 ###  4. Lancer l'application Streamlit
 ```bash
-streamlit run components/EDF.py
+streamlit run EDF.py
 ```
 
 
