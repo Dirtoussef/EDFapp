@@ -1,0 +1,6 @@
+__pycache__/
+edf_env/
+.venv/
+*.pyc
+data/*.xlsx
+temp_images/
