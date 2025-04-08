@@ -12,12 +12,18 @@ import re
 def import_excel():
     
 
-    edf = pd.read_excel("data/lelec.xlsx", engine="openpyxl")
+    edf = pd.read_excel("data/lelec.xlsx", engine="openpyxl",header=2) # header= 2  pour ignorer les deux premiéres lignes 
     # Netoyage de données
-    edf = edf.dropna(how='all')
-    edf['Année'] = pd.to_numeric(edf['Année'], errors='coerce').astype('Int64')
-    edf = edf[edf['Catégorie'] != 'Déchets radioactifs']
-    edf = edf.drop(columns=['Perimètre juridique', 'Unité'], errors='ignore')
+    edf = edf.dropna(axis=0, how='all') # Supression de lignes vides 
+    edf = edf.dropna(axis=1, how='all') # Supression de colonnes vides 
+    edf=edf[~edf['Catégorie'].isin(['Déchets radioactifs'])] # Supprission de lignes avec catégorie = Déchet radioactifs
+    edf=edf.drop(columns=['Perimètre juridique','Unité'])  # Supression des colonnes Perimetre juridique et UNité 
+    ## edf[edf.duplicated()]  ##  pour voir les lignes duppliquée 
+    edf = edf.drop_duplicates() ## suppression  des lignes duppliquées
+
+    edf['Année'] = pd.to_numeric(edf['Année'], errors='coerce').astype('Int64')  # convertir l'anné en entier 
+
+    
     
 
     return edf
